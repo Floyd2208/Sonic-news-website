@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web news</title> 
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/load.css">
+    <link rel="stylesheet" href="./writable/accets/bs4/bootstrap.min.css">
+	<link rel="stylesheet" href="./writable/accets/fa5/css/all.min.css">
+	<!-- Google Fonts -->
+	<!-- Styles -->
+    <link rel="stylesheet" href="./writable/accets/css/theme.css">
+	<!-- <link rel="stylesheet" href="./writable/accets/css/theme.css"> -->
+	<link rel="stylesheet" href="./writable/accets/css/style.css">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    
+
+    <nav class="navbar navbar-expand-md navbar navbar-dark bg-primary">  
+        <a class="navbar-brand" href="#">Sonic News</a>  
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">  
+         <span class="navbar-toggler-icon"></span>  
+        </button>  
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">  
+         <ul class="navbar-nav">  
+          <li class="nav-item">  
+           <!-- <a class="nav-link" href="#">Link</a>   -->
+          </li>  
+          <li class="nav-item">  
+           <!-- <a class="nav-link" href="#">Link</a>   -->
+          </li>  
+          <li class="nav-item">  
+           <!-- <a class="nav-link" href="#">Link</a>   -->
+          </li>    
+         </ul>  
+        </div>  
+        <a href="http://localhost:3000"><p class="register">Log Out!</p></a> 
+       </nav> 
+
+    <!-- <header class="header"></header>
+    <h1>Node news</h1>
+    <header class="header">
+        <div class="header__logo">Node.Js News</div>
+        
+    </header> -->
+    <div class="categories">
+        <div class="wrapper">
+            <!-- <h6 class="category-sub-title">Lorem ipsum dolor sit amet.</h6> -->
+            <!-- <h3 class="category-title">our categories</h3> -->
+<h1>Our Categories</h1>
+
+            <div class="categories-container">
+
+                <div class="category">
+
+                    <!-- <img src="./writable/accets/images/categories/cat11.jpg" alt=""> -->
+                    <div class="category-body">
+                       <a href="http://localhost:4000"> <h4>Top Headlines Today </h4></a>
+                        <span>Top News</span>
+                    </div>
+                </div>
+                <div class="category">
+
+                    <!-- <img src="./writable/accets/images/categories/cat11.jpg" alt=""> -->
+                    <div class="category-body">
+                       <a href="http://localhost:4001"> <h4>Sports </h4></a>
+                        <span>Top News</span>
+                    </div>
+                </div>
+
+                <div class="category">
+
+                    <!-- <img src="./writable/accets/images/categories/cat2.jpg" alt=""> -->
+                    <img src="/public/img/cat1.jpeg" alt="" srcset="">
+                    <div class="category-body">
+                        <a href="http://localhost:4002"><h4>International</h4></a>
+                        </a>
+                        <span>Top News</span>
+                    </div>
+                </div>
+
+                <div class="category">
+
+                    <!-- <img src="./writable/accets/images/categories/cat33.jpg" alt=""> -->
+                    <div class="category-body">
+                        <a href="http://localhost:4003"><h4>Entertainment</h4></a>
+                        <span>Top News</span>
+                    </div>
+                </div>
+
+                <div class="category">
+
+                    <img src="./writable/accets/images/categories/cat4.jpeg" alt="">
+                    <div class="category-body">
+                        <a href="http://localhost:4004"><h4>Business</h4></a>
+                        <span>Top News</span>
+                    </div>
+                </div>
+                <div class="category">
+
+                    <img src="cat1.jpeg" alt="">
+                    <div class="category-body">
+                       <a href="http://localhost:4005"><h4>Health</h4></a> 
+                       <span>Top News</span>
+                    </div>
+                    </div>
+            </div>
+
+           
+            </section>
+           
+        </div>
+    </div>
+    <div class="typewriter">
+        <div class="typewriter-text"><h2>TODAY'S TOP 20 HEALTH NEWS...</h2></div>
+        </div>
+ 
+  
+        
+    
+
+    <div class="wrapper">
+        <div class="news">
+            <% if(articles != null) { %>
+            <% articles.forEach(function(article, index) { %>
+                <a href="<%- article.url %>" class="news__card" target="_blank">
+                    <img src="<%- article.urlToImage %>" alt="<%- article.title %>">
+                    <h2><%- article.title %></h2>
+                    <p><%- article.description %></p>
+                </a>
+            <% }) %>
+            <% } else { %>
+                No posts found.
+            <% } %>
+        </div>
+    </div>  
+
+    <!--<% articles.forEach(function(article,index){ %>
+        <a href="<%= article.url %>" >
+        <h2> <%= article.title %> </h2></a>
+        <p> <%= article.content %></p>
+
+        <% }) %>
+        -->
+
+       
+</body>
+</html>

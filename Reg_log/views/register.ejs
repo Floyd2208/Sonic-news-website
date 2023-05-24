@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and login form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+        <!--Sign up-->
+        <div class="signup">
+            <h2><%= title %><%= password%><%= email %></h2>
+            <form action="/register" method="post">
+                <label for="chk" aria-hidden="true">Sign Up</label>
+                <input type="text" name="name" placeholder="Enter Full Name" >
+                <input type="number" name="number" placeholder="Enter Mobile Number" >
+                <input type="email" name="email" placeholder="Enter Email" >
+                <input type="password" name="password" placeholder="Enter Password" >
+                <input type="password" name="cpassword" placeholder="Re-enter password" >
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    <!--Login-->
+        <div class="login">
+            <form method="post" action="/login">
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="password" placeholder="Password" required="">
+                <button>Login</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

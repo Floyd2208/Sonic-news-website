@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Loading Div</title>
+    <link rel="stylesheet" href="css/load.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="loader">
+        <div></div>
+    </div>
+    <div class="content">
+        <!-- <link rel="stylesheet" href="http://"> -->
+        <a href="http://localhost:4000"><img src="/img/SONIC.png" alt="" srcset="" class="logo"></a>
+    </div>
+    <script>
+        $(window).on('load',function(){
+            $(".loader").fadeOut(4000);
+            $(".content").fadeIn(1000);
+        });
+    </script> 
+       
+</body>
+</html>
+
